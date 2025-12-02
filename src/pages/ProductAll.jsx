@@ -15,7 +15,7 @@ const ProductAll = () => {
         setError(null)
         try {
             const q = encodeURIComponent(searchQuery);
-            const url = q ? `http://localhost:4000/products?q=${q}` : `http://localhost:4000/products`;
+            const url = q ? `https://my-json-server.typicode.com/chayoungsim/sim-hnm/products?q=${q}` : `https://my-json-server.typicode.com/chayoungsim/sim-hnm/products`;
             
             const res = await fetch(url)
             if (!res.ok) throw new Error(`Fetch error ${res.status}`)

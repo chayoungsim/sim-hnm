@@ -11,7 +11,7 @@ const ProductDetail = () => {
   const {id} = useParams();
   const navigate = useNavigate();
 
-  const url= `http://localhost:4000/products/${id}`
+  const url= `https://my-json-server.typicode.com/chayoungsim/sim-hnm/products/${id}`
 
   const getProductDetail = async () => {
     try {
